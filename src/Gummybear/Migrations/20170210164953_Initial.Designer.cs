@@ -8,7 +8,7 @@ using Gummybear.Models;
 namespace Gummybear.Migrations
 {
     [DbContext(typeof(GummybearDbContext))]
-    [Migration("20170210161855_Initial")]
+    [Migration("20170210164953_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

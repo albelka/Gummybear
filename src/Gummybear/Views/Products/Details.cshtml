@@ -1,0 +1,17 @@
+﻿@model Gummybear.Models.Product
+
+@{
+    ViewData["Title"] = "Travel Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h2>Details</h2>
+    <hr />
+    <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+    <p>@Html.DisplayNameFor(model => model.Cost): $ @Html.DisplayFor(model => model.Cost)</p>
+    <p>Made in:  @Html.DisplayFor(model => model.CountryOfOrigin)</p>
+
+
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</div>
