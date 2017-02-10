@@ -16,7 +16,7 @@
         @Html.LabelFor(model => model.CountryOfOrigin)
         @Html.TextBoxFor(model => model.CountryOfOrigin)
 
-        @Html.LabelFor(model => model.Picture)
+        @Html.LabelFor(model => model.Picture, new {@class="text", type="text", required = "required" }))
         @Html.TextBoxFor(model => model.Picture)
 
 

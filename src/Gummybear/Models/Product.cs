@@ -9,7 +9,7 @@ namespace Gummybear.Models
         [Key]
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
         public string CountryOfOrigin { get; set; }
         public string Picture { get; set; }
     }

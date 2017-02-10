@@ -4,26 +4,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div>
-    <h2>Edit</h2>
+    <h2>Edit @Html.DisplayFor(model => model.Name)</h2>
     <hr />
-    <h4>Edit this product: @Html.DisplayFor(model => model.Name)</h4>
 
+
+<div class="form-group">
     @using (Html.BeginForm())
     {
+
         @Html.HiddenFor(model => model.ProductId)
 
-        @Html.LabelFor(model => model.Name)
-        @Html.EditorFor(model => model.Name)
+        @Html.LabelFor(model => model.Name, ViewData["attributes"])<br />
+        @Html.EditorFor(model => model.Name, new { attributes = new { @class = "form-control" } })<br /><br />
 
-        @Html.LabelFor(model => model.Cost)
-        @Html.EditorFor(model => model.Cost)
+        @Html.LabelFor(model => model.Cost, ViewData["attributes"])<br />
+        <span>$</span>@Html.EditorFor(model => model.Cost, new { attributes = new { @class = "form-control", type="money" } })<br /><br />
 
-        @Html.LabelFor(model => model.CountryOfOrigin)
-        @Html.EditorFor(model => model.CountryOfOrigin)
+        @Html.LabelFor(model => model.CountryOfOrigin, ViewData["attributes"])<br>
+        @Html.EditorFor(model => model.CountryOfOrigin)<br/><br />
 
-        @Html.LabelFor(model => model.Picture)
-        @Html.EditorFor(model => model.Picture)
+        @Html.LabelFor(model => model.Picture, ViewData["attributes"])<br />
+        @Html.EditorFor(model => model.Picture, new { attributes = new { @class = "form-control" } })<br /><br />
 
         <input type="submit" value="Save" class="btn btn-info"/>
     }
