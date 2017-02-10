@@ -6,16 +6,20 @@
 }
 
 <div>
-    <h2>Details</h2>
+    <h2>@Html.DisplayFor(model => model.Name)</h2>
+
+    
+
+    @if (Model.Picture != "")
+    {
+        <img id="detail-picture" src="@Html.DisplayFor(model => model.Picture)" /><br />
+    }
+
     <hr />
-    <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
     <p>@Html.DisplayNameFor(model => model.Cost): $ @Html.DisplayFor(model => model.Cost)</p>
     <p>Made in:  @Html.DisplayFor(model => model.CountryOfOrigin)</p>
     <p>
         @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
         @Html.ActionLink("Delete", "Delete", new { id = Model.ProductId })
     </p>
-
-
-    <p>@Html.ActionLink("Back to list", "Index")</p>
 </div>

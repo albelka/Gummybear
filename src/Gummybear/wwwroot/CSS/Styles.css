@@ -33,6 +33,11 @@ ul {
 
 }
 
+div img #detail-picture {
+    display: inline-flex;
+    background-color: black;
+}
+
 .shop {
     display: inline-flex;
 }
