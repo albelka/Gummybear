@@ -8,9 +8,10 @@ using Gummybear.Models;
 namespace Gummybear.Migrations
 {
     [DbContext(typeof(GummybearDbContext))]
-    partial class GummybearDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170210194733_AddPictureProperty")]
+    partial class AddPictureProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Gummybear.Models.Product>
+@using Gummybear.Models
 
 @{
     ViewData["Title"] = "Index";
@@ -6,14 +7,15 @@
 }
 
 <div class="shop">
-    <h2>Products</h2>
-    @foreach(var product in Model)
+
+    @foreach (var product in Model)
     {
-        <p>@Html.DisplayFor(model => product.Name) |
-            @Html.ActionLink("Details", "Details", new { id = product.ProductId }) |
-            @Html.ActionLink("Edit", "Edit", new { id = product.ProductId })
-        </p>
+        @if (product.Picture != "")
+        {
+            <a class="picture" href="@Url.Action("Details", "Products", new { id = product.ProductId })">
+                <img id="giant-bear" src="@Html.DisplayFor(model => product.Picture)" /><br />
+            </a>
+        }         
     }
 
-    <p>@Html.ActionLink("Add new item", "Create")</p>
 </div>

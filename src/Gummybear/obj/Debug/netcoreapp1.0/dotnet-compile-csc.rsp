@@ -198,6 +198,8 @@
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Controllers\ProductsController.cs"
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Migrations\20170210164953_Initial.cs"
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Migrations\20170210164953_Initial.Designer.cs"
+"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Migrations\20170210194733_AddPictureProperty.cs"
+"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Migrations\20170210194733_AddPictureProperty.Designer.cs"
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Migrations\GummybearDbContextModelSnapshot.cs"
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Models\GummybearDbContext.cs"
 "C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Gummybear\src\Gummybear\Models\Product.cs"

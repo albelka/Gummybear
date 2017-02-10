@@ -11,6 +11,9 @@
     <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
     <p>@Html.DisplayNameFor(model => model.Cost): $ @Html.DisplayFor(model => model.Cost)</p>
     <p>Made in:  @Html.DisplayFor(model => model.CountryOfOrigin)</p>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId })
+    </p>
 
 
     <p>@Html.ActionLink("Back to list", "Index")</p>

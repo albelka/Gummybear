@@ -22,6 +22,9 @@
         @Html.LabelFor(model => model.CountryOfOrigin)
         @Html.EditorFor(model => model.CountryOfOrigin)
 
+        @Html.LabelFor(model => model.Picture)
+        @Html.EditorFor(model => model.Picture)
+
         <input type="submit" value="Save" class="btn btn-info"/>
     }
     <p>@Html.ActionLink("Back to list", "Index")</p>
