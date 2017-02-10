@@ -9,8 +9,8 @@ namespace Gummybear.Models
         [Key]
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public double Cost { get; set; }
-        public string CountryOfOrigin { get; set; }
+        public decimal Cost { get; set; }
+        public string From { get; set; }
         public string Picture { get; set; }
     }
 }

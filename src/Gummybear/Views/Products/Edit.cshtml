@@ -20,8 +20,8 @@
         @Html.LabelFor(model => model.Cost, ViewData["attributes"])<br />
         <span>$</span>@Html.EditorFor(model => model.Cost, new { attributes = new { @class = "form-control", type="money" } })<br /><br />
 
-        @Html.LabelFor(model => model.CountryOfOrigin, ViewData["attributes"])<br>
-        @Html.EditorFor(model => model.CountryOfOrigin)<br/><br />
+        @Html.LabelFor(model => model.From, ViewData["attributes"])<br>
+        @Html.EditorFor(model => model.From)<br/><br />
 
         @Html.LabelFor(model => model.Picture, ViewData["attributes"])<br />
         @Html.EditorFor(model => model.Picture, new { attributes = new { @class = "form-control" } })<br /><br />
