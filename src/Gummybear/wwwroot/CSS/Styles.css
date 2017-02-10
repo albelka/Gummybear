@@ -11,9 +11,6 @@ ul {
     list-style-type: none;
 }
 
-
-
-
 .navbear {
     height: 60px;
     padding-right: 50px;
@@ -23,6 +20,7 @@ ul {
 .sleepybear {
     padding-left: -220px;
     height: 50%;
+    background-color: inherit;
 }
 
 .picture img {
@@ -34,7 +32,6 @@ ul {
 
 div img #detail-picture {
     display: inline-flex;
-    background-color: black;
 }
 
 .shop {
@@ -47,11 +44,11 @@ p.title {
     color: darkolivegreen;
 }
 
-body {
-    background-color: white;
-}
+
 
 .nav-item {
      font-family:'Comic Sans MS';
 }
+
+
 
