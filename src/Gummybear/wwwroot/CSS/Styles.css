@@ -42,3 +42,7 @@ p.title {
     font-family:'Comic Sans MS';
     color: darkolivegreen;
 }
+
+body {
+    background-color: white;
+}
