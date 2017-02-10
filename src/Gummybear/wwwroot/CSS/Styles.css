@@ -1,2 +1,31 @@
-﻿body {
+﻿.navbar {
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 100px;
+    border-bottom-color: lightcoral;
+    text-align: end;
+     
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+img.navbear {
+    height: 60px;
+    align-items: center;
+    
+}
+
+.sleepybear {
+    padding-left: -220px;
+    height: 50%;
+
+}
+
+.shop {
+    background
 }
