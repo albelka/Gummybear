@@ -7,11 +7,9 @@
     <h2>Edit @Html.DisplayFor(model => model.Name)</h2>
     <hr />
 
-
 <div class="form-group">
     @using (Html.BeginForm())
     {
-
         @Html.HiddenFor(model => model.ProductId)
 
         @Html.LabelFor(model => model.Name, ViewData["attributes"])<br />
@@ -29,5 +27,4 @@
         <input type="submit" value="Save" class="btn btn-info"/>
     }
     <p>@Html.ActionLink("Back to list", "Index")</p>
-
 </div>
