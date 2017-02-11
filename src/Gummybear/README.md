@@ -26,6 +26,7 @@ Then in the command prompt write:
 ```
 > dotnet ef migrations add Initial
 > dotnet ef database update
+```
 
 Now run Gummybear in Visual Studio to view it in any modern browser.
 
